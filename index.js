@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
-
+const prefix = "/r"
 
 client.once('ready', () => {
     //This function will be executed when the bot starts
