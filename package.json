@@ -1,13 +1,17 @@
 {
   "name": "discord-dice-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Roll Dice Bot for discord",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "dice",
+    "roll"
+  ],
+  "author": "https://github.com/joroSharp",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.3.1",
