@@ -6,18 +6,19 @@ This project is about a simple bot for Discord that allows you to simulate dice 
 
 You must have installed on your computer
 
-- Node.js [v12 or higher]: <https://nodejs.org/en/>
-- A code editor (I recommend [Visual Studio Code]: <https://code.visualstudio.com/>)
-- A registered Discord bot. You can create a Discord App from the [Discord developers portal]: <https://discord.com/developers/applications>
+- [Node.js v12 or higher](https://nodejs.org/en/)
+- A code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/))
+- A registered Discord bot. You can create a Discord App from the [Discord developers portal](https://discord.com/developers/applications)
 
-_Note: In case of any problem or doubt, I recommend checking the official [discord.js documentation] <https://discordjs.guide/>_
+_Note: In case of any problem or doubt, I recommend checking the official [discord.js documentation](https://discordjs.guide/)_
 
 ## CONFIGURE THE PROJECT
 
 ### 1. Add your bot in a Discord channel
 
 After registering a new app on the Discord developer portal, it is assigned a Client ID which you can find in the General Information of your app (for example, 981081844001717752). Replace CLIENT_ID with your actual Client ID and open the link to add your bot to a channel (this requires you to have sufficient permission on that channel).
-<https://discord.com/oauth2/authorize?client_id={CLIENT_ID}&scope=bot>
+
+    https://discord.com/oauth2/authorize?client_id={CLIENT_ID}&scope=bot
 
 ### 2. Generate token
 
