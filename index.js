@@ -15,7 +15,7 @@ client.on('message', message => {
     if(message.author.bot || message.content.substring(0, 2) != prefix){
         //The bot is constantly reading the chat, so we are going to discard all the messages that it writes and those that do not start with the prefix assigned in the config file.
         return;
-    } 
+    }
 
     try {
         let replyMessage = "The format of your roll of the dice is not correct";
@@ -40,8 +40,8 @@ client.on('message', message => {
 
 
 function rolldices(num, sides){
-    num = num == '' ? '1' : num; 
-    
+    num = num == '' ? '1' : num;
+
     //This is a simple limitation to prevent the bot from crashing
     if(num <= 100 && sides <= 1000)
     {
@@ -56,11 +56,12 @@ function rolldices(num, sides){
         }
 
         return `(${reply.slice(2)}) = ${total}`;
-        
+
     }
     else{
         return "Please make an easier roll";
     }
 }
 
-client.login(token);
+// Use predefined environment TOKEN variable
+client.login(process.env.DICETOKEN);
