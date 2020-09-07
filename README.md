@@ -23,19 +23,35 @@ After registering a new app on the Discord developer portal, it is assigned a Cl
 ### 2. Generate and export token
 
 Generate a token for your registered app from the Discord developers portal.
-Copy de token and generate an environment variable:
+Copy de token and generate an environment variable using a terminal:
 
-  # Linux users:
-  export DICETOKEN=your_secret_token_here
-  # Windows users:
-  set DICETOKEN=your_secret_token_here
+Linux users:
+
+    export DICETOKEN=your_secret_token_here
+
+Windows users:
+
+    set DICETOKEN=your_secret_token_here
+
+__Notes:__
+
+To create environment variable you need to run the above commands as administrator. Also, in the case of Windows it may be required to restart the system.
+
+If you have trouble creating environment variables, you can alternatively go to the index.js file and replace _process.env.DICETOKEN_ with your token in string format.
+
+    client.login(process.env.DICETOKEN);
+
+However, this alternative is not recommended since you are exposing your token. Take special care when publishing your code and if you think your token has been compromised, you can generate a new one from the Discord developer portal.
 
 ### 3. Install dependencies
-  npm install
+
+From a terminal, navigate to the root of the project and run the command:
+
+    npm install
 
 ### 4. Run the app
 
-Open a terminal, navigate to the root of the project and run the command:
+From a terminal, navigate to the root of the project and run the command:
 
     npm start
 
@@ -48,6 +64,7 @@ from the channel where you have added your bot run the command:
 The bot should respond with a roll of 4 dice with values from 1 to 100.
 
 ### 6. [OPTIONAL] Deploy app in heroku
+
 Generate heroku app: [New heroku app](https://dashboard.heroku.com/new-app)
 Add remotes:
   heroku git:remote -a nombre-app-heroku
