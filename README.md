@@ -66,12 +66,18 @@ The bot should respond with a roll of 4 dice with values from 1 to 100.
 ### 6. [OPTIONAL] Deploy app in heroku
 
 Generate heroku app: [New heroku app](https://dashboard.heroku.com/new-app)
+
 Add remotes:
-  heroku git:remote -a nombre-app-heroku
+
+    heroku git:remote -a nombre-app-heroku
+
 Add ENV token:
-  heroku config:set DICETOKEN=your_secret_token_here
+
+    heroku config:set DICETOKEN=your_secret_token_here
+
 Run the app:
-  heroku run 'npm start'
+
+    heroku run 'npm start'
 
 ## SYNTAX
 
